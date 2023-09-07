@@ -26,6 +26,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    user-select: none;
 }
 
 .navbar-brand {
@@ -33,6 +34,7 @@ body {
     text-decoration: none;
     color: #fff;
     font-size: 28px;
+    user-select: none;
 }
 
 .navbar-menu ul {
