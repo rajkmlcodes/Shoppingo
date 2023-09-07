@@ -136,6 +136,7 @@ button {
     /* ... Your existing styles ... */
     position: relative;
     overflow: hidden;
+    padding: 0 20px;
 }
 
 .product-carousel {
@@ -386,6 +387,19 @@ button {
 
 
     /* product section--------------------------- */
+    .featured-products h2 {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.4;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 6px;
+    }
+    .bi-caret-right-fill {
+        font-size: 12px;
+    }
+
     .featured-products h3 {
         font-size: 13px;
         font-weight: 600;
