@@ -1,0 +1,399 @@
+/* IMPORTING POPPINS FONT FROM GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* IMPORTING KALAM FONT FROM GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Cedarville+Cursive&family=Kalam:wght@300;400;700&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+ 
+
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+
+/* ... Your existing styles ... */
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-family: 'Kalam', cursive;
+    text-decoration: none;
+    color: #fff;
+    font-size: 28px;
+}
+
+.navbar-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hamburger Menu Styles */
+.navbar-toggle {
+    display: none;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+/* HERO SECTION STYLING */
+
+.sliderWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200x;
+}
+  
+.sliderWrap img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+  
+
+
+/* Header Styles */
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Search Styles */
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+
+/* Featured Products Section Styles */
+.featured-products {
+    /* ... Your existing styles ... */
+    position: relative;
+    overflow: hidden;
+}
+
+.product-carousel {
+    /* ... Your existing styles ... */
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+    cursor: grab; /* Use "grab" cursor for better UX */
+}
+
+.carousel-wrapper {
+    display: flex;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+}
+
+/* Hide scroll bar */
+.product-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Show scroll bar on hover for desktop */
+.product-carousel:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------------- */
+
+.featured-products h2 {
+    font-size: 20px;
+    color: #333;
+    line-height: 0.5;
+}
+
+.product {
+    width: 150px;
+    height: auto;
+    margin: 0 20px;
+    text-align: left;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.p-img-div {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-size: 16px;
+    line-height: 0.5;
+}
+
+.product p {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.product img {
+    height: 100%;
+    /* border: 1px solid #cf2424; */
+    border-radius: 5px;
+}
+
+.ratings {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 3px;
+    font-size: 12px;
+    color: #ffa600;
+    line-height: 0.5;
+}
+
+/* .star {
+    background: #ffc400;
+} */
+
+.price {
+    font-weight: bold;
+    color: #ff5722;
+    font-size: 16px;
+    line-height: 0.1;
+}
+
+
+
+/* Medium Grid Layout Styles -----------------------------------*/
+
+.medium-grid {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.medium-grid h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.grid-item {
+    background-color: #ffffff;
+    /* border: 1px solid #ddd; */
+    text-align: center;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+    border-radius: 6px;
+    flex: 1; 
+    min-width: 200px;
+    overflow: hidden;
+    line-height: 1;
+}
+
+.g-img-div {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item img {
+    width: 100%;
+}
+
+.grid-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.grid-item p {
+    font-size: 14px;
+    color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ... Your existing styles ... */
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-inner {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on small screens */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Center the links on small screens */
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #ff6600; /* Change the hover color as needed */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px; /* Adjust font size for small screens */
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+
+
+    .footer-inner {
+        flex-direction: column; /* Stack items vertically on small screens */
+        text-align: center; /* Center-align all items */
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    .footer-links ul,
+    .footer-social ul {
+        margin-top: 20px;
+    }
+}
+
+/* ... Your existing styles ... */
