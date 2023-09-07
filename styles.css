@@ -58,6 +58,7 @@ body {
 /* Hamburger Menu Styles */
 .navbar-toggle {
     display: none;
+    user-select: none;
 }
 
 .hamburger {
