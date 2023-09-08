@@ -357,6 +357,12 @@ button {
 /* Media Query for Small Screens */
 @media (max-width: 768px) {
 
+    /* Navbar Styles */
+    .navbar {
+        padding: 5px 20px;
+        user-select: none;
+    }
+
     .navbar-menu {
         display: none;
         flex-direction: column;
@@ -369,6 +375,11 @@ button {
 
     .navbar-menu.active {
         display: flex;
+    }
+
+    .navbar-brand {
+        font-family: 'Kalam', cursive;
+        font-size: 20px;
     }
 
     .navbar-menu ul {
@@ -384,6 +395,9 @@ button {
         display: block;
     }
 
+    .hamburger {
+        font-size: 20px;
+    }
 
 
     /* product section--------------------------- */
