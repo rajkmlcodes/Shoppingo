@@ -309,11 +309,12 @@ button {
     background-color: #f5f5f5;
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 8px;
+    padding: 6px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     overflow: hidden;
     height: 18vh;
+    width: auto;
 }
 
 .t-product img {
