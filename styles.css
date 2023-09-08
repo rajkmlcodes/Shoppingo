@@ -8,9 +8,9 @@
 
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
 }
 
@@ -28,11 +28,19 @@ body {
 }
 
 .navbar-brand {
-    font-family: 'Kalam', cursive;
+    font-family: 'Kalam', cursiv !important;
     text-decoration: none;
     color: #fff;
     font-size: 28px;
     user-select: none;
+}
+.navbar-brand a {
+    text-decoration: none;
+    color: #fff;
+    user-select: none;
+}
+.navbar-brand:hover {
+    cursor: pointer;
 }
 
 .navbar-menu ul {
@@ -332,6 +340,10 @@ z
     font-size: 14px; 
 }
 
+
+
+
+
 /* Media Query for Small Screens */
 @media (max-width: 768px) {
 
@@ -366,7 +378,8 @@ z
     }
 
     .navbar-menu li {
-        margin: 10px 0;
+        margin: 4px 0;
+        font-size: 16px;
     }
 
     .navbar-toggle {
@@ -491,6 +504,5 @@ z
     .footer-social ul {
         margin-top: 20px;
     }
-}
 
-/* ... Your existing styles ... */
+}

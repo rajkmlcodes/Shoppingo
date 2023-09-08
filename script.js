@@ -107,5 +107,3 @@ carousels.forEach((carousel, index) => {
         scrollLeft = carousel.scrollLeft;
     });
 });
-
-
