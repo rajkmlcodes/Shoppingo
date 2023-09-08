@@ -16,8 +16,6 @@ body {
 
 
 
-/* ... Your existing styles ... */
-
 /* Navbar Styles */
 .navbar {
     background-color: #333;
@@ -93,10 +91,10 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #007bff;
+    background-color: #dfdfdf;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 header h1 {
@@ -104,15 +102,17 @@ header h1 {
     font-size: 36px;
 }
 
+
 /* Search Styles */
 .search-container {
     text-align: center;
     margin: 20px 0;
 }
 
-input[type="text"] {
+input[type="text"] {    
     padding: 10px;
-    width: 300px;
+    min-width: 200px;
+    max-width: 300px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -133,19 +133,17 @@ button {
 
 /* Featured Products Section Styles */
 .featured-products {
-    /* ... Your existing styles ... */
     position: relative;
     overflow: hidden;
     padding: 0 20px;
 }
 
 .product-carousel {
-    /* ... Your existing styles ... */
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
-    cursor: grab; /* Use "grab" cursor for better UX */
+    -webkit-overflow-scrolling: touch;
+    cursor: grab; 
 }
 
 .carousel-wrapper {
@@ -164,7 +162,6 @@ button {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* ------------------------- */
 
 .featured-products h2 {
     font-size: 20px;
@@ -179,9 +176,7 @@ button {
     text-align: left;
     background-color: #fff;
     padding: 10px;
-    /* border: 1px solid #ddd; */
     border-radius: 5px;
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
     overflow: hidden;
 }
 
@@ -207,7 +202,6 @@ button {
 
 .product img {
     height: 100%;
-    /* border: 1px solid #cf2424; */
     border-radius: 5px;
 }
 
@@ -254,9 +248,7 @@ button {
 
 .grid-item {
     background-color: #ffffff;
-    /* border: 1px solid #ddd; */
     text-align: center;
-    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
     border-radius: 6px;
     flex: 1; 
     min-width: 200px;
@@ -289,20 +281,6 @@ button {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* ... Your existing styles ... */
-
 /* Footer Styles */
 .footer {
     background-color: #333;
@@ -312,7 +290,7 @@ button {
 
 .footer-inner {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line on small screens */
+    flex-wrap: wrap; 
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
@@ -328,9 +306,9 @@ button {
 .footer-social ul {
     list-style: none;
     padding: 0;
-    text-align: center; /* Center the links on small screens */
+    text-align: center; 
 }
-
+z
 .footer-links ul li,
 .footer-social ul li {
     margin-bottom: 10px;
@@ -345,13 +323,13 @@ button {
 
 .footer-links a:hover,
 .footer-social a:hover {
-    color: #ff6600; /* Change the hover color as needed */
+    color: #ff6600; 
 }
 
 .footer-bottom {
     text-align: center;
     margin-top: 20px;
-    font-size: 14px; /* Adjust font size for small screens */
+    font-size: 14px; 
 }
 
 /* Media Query for Small Screens */
@@ -398,6 +376,21 @@ button {
     .hamburger {
         font-size: 20px;
     }
+
+
+
+    /* HERO SLIDER------------------------------------- */
+    .sliderWrap {
+        width: 100%;
+        height: 110px;
+    }
+      
+    .sliderWrap img {
+        /* width: 100%; */
+        height: 110px;
+        object-fit: cover;
+    }
+
 
 
     /* product section--------------------------- */
@@ -464,6 +457,22 @@ button {
     }
 
 
+
+
+    /* SEARCH BOX */
+    .search-container {
+        margin: 5px 0;
+    }
+
+    input[type="text"] {    
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
 
 
 
