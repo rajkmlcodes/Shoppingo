@@ -281,6 +281,171 @@ button {
     line-height: 0.1;
 }
 
+/* GRID CONTAINER WITH LARGE GRID */
+/* banner ad */
+.banner-ad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+img[alt="banner-ad"] {
+    width: 90vw;
+    border-radius: 10px;
+}
+
+
+/* grid container */
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 50px;
+    overflow: hidden;
+    margin: 100px 0;
+}
+
+/* styling small banner or small grid */
+.small-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    overflow: hidden;
+    height: 100%;
+    line-height: 0;
+}
+
+.small-banner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    width: 650px;
+    height: 400px;
+    padding-left: 40px;
+    border-radius: 10px;
+    line-height: 0;
+}
+
+.sm-banner-1 {
+    background-image: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
+}
+
+.sm-banner-2 {
+    background-image: url('https://images.unsplash.com/photo-1523381294911-8d3cead13475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
+}
+
+.small-banner h4 {
+    color: #fff;
+    line-height: 0;
+}
+.small-banner h2 {
+    font-size: 46px;
+    color: #fff;
+    line-height: 0;
+}
+.small-banner p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0;
+} 
+
+
+.small-banner-btn {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #fff;
+    padding: 8px 15px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.15s ease;
+}
+
+.small-banner-btn:hover,
+.large-banner-btn:hover {
+    cursor: pointer;
+    border-radius: 4px;
+    color: #333;
+    background: #fff;
+
+    box-shadow:
+  0.8px 1.7px 2.4px rgba(0, 0, 0, 0.042),
+  1.9px 4.1px 5.7px rgba(0, 0, 0, 0.061),
+  3.6px 7.8px 10.8px rgba(0, 0, 0, 0.075),
+  6.5px 13.8px 19.2px rgba(0, 0, 0, 0.089),
+  12.1px 25.9px 35.9px rgba(0, 0, 0, 0.108),
+  29px 62px 86px rgba(0, 0, 0, 0.15)
+;
+}
+
+
+/* styling large banner or large grid */
+
+.large-grid {
+    position: relative;
+    width: 700px;
+    height: 850px;
+    background-image: url('https://images.unsplash.com/photo-1622519407650-3df9883f76a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1664&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: #fff;
+    border-radius: 10px;
+    line-height: 0;
+}
+.large-banner{
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    line-height: 0;
+}
+
+.large-banner h2 {
+    color: #fff;
+    line-height: 0;
+}
+.large-banner h1 {
+    font-size: 64px;
+    color: #fff;
+    line-height: 1;
+}
+.large-banner p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 0;
+}
+
+.large-banner-btn {
+    bottom: 0;
+    right: 0;
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #fff;
+    padding: 10px 25px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    transition: 0.15s ease;
+}
+
+
+
+
 
 
 /* Medium Grid Layout Styles -----------------------------------*/
@@ -296,7 +461,7 @@ button {
     margin-bottom: 20px;
 }
 
-.grid-container {
+.medium-grid-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -570,6 +735,88 @@ z
         font-size: 14px;
     }
 
+
+
+
+    /* grid -------------------------------------------------- */
+
+    .grid-container {
+        height: auto;
+        gap: 35px;
+        margin: 50px 0;
+    }
+    .small-grid {
+        gap: 35px;
+        width: 100%;
+    }
+    .small-banner {
+        width: 80%;
+        height: 150px;
+        padding-left: 30px;
+        line-height: 0;
+        padding: 20px;
+        gap: 0px;
+    }
+    .small-banner h4 {
+        display: none;
+    }
+    .small-banner h2 {
+        font-size: 32px;
+        color: #fff;
+        line-height: 1;
+    }
+    .small-banner p {
+        display: none;
+    } 
+    .small-banner-btn {
+        padding: 6px 12px;
+        margin-top: 10px;
+        font-weight: 600;
+        font-size: 14px;
+        transition: 0.15s ease;
+    }
+
+    /* large grid */
+    .large-grid {
+        width: 90%;
+        height: 400px;
+    }
+    .large-banner{
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        line-height: 0;
+    }
+    
+    .large-banner h2 {
+        color: #fff;
+        line-height: 0;
+    }
+    .large-banner h1 {
+        font-size: 42px;
+        color: #fff;
+        line-height: 1;
+    }
+    .large-banner p {
+        display: none;
+    }
+    
+    .large-banner-btn {
+        padding: 8px 20px;
+        font-size: 18px;
+    }
+
+
+    /* medium grid------------------------------------------- */
+    .medium-grid h2 {
+        font-size: 20px;
+    }
+    .grid-item h3 {
+        font-size: 16px;
+    }
+    .grid-item p {
+        font-size: 14px;
+    }
 
 
 
