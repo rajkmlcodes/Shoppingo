@@ -565,7 +565,8 @@ img[alt="banner-ad"] {
 .footer {
     background-color: #333;
     color: #fff;
-    padding: 40px 0;
+    padding: 15px 0;
+    text-align: center;
 }
 
 .footer-inner {
@@ -573,13 +574,18 @@ img[alt="banner-ad"] {
     flex-wrap: wrap; 
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.footer-logo img {
-    max-width: 150px;
+.footer-logo {
+   font-size: 42px;
+}
+
+.footer-logo:hover {
+    cursor: pointer;
+    user-select: none;
 }
 
 .footer-links ul,
@@ -587,29 +593,33 @@ img[alt="banner-ad"] {
     list-style: none;
     padding: 0;
     text-align: center; 
+    user-select: none;
 }
-z
+
 .footer-links ul li,
 .footer-social ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    user-select: none;
 }
 
 .footer-links a,
 .footer-social a {
-    color: #fff;
+    color: #dbdbdb; 
     text-decoration: none;
     transition: color 0.3s ease;
+    user-select: none;
 }
 
 .footer-links a:hover,
 .footer-social a:hover {
-    color: #ff6600; 
+    color: #fff;
+    font-weight: 500;
 }
 
 .footer-bottom {
     text-align: center;
-    margin-top: 20px;
-    font-size: 14px; 
+    margin-top: 10px;
+    font-size: 16px; 
 }
 
 
@@ -712,7 +722,7 @@ z
 
 
 
-    /* product section--------------------------- */
+    /* STYLING PRODUCT SECTION AND ITS CHILDREN--------------------------- */
     .featured-products {
         padding: 0 3px;
     }
@@ -778,7 +788,7 @@ z
 
 
 
-    /* SEARCH BOX */
+    /* SEARCH BOX  STYLING FOR RESPONSIVE VIEW --------------------------------*/
     .search-container {
         margin: 5px 0;
     }
@@ -796,7 +806,7 @@ z
 
 
 
-    /* grid -------------------------------------------------- */
+    /* GRID CONTAINER AND SMALL GRID STYLING ----------------------------------------- */
 
     .grid-container {
         height: auto;
@@ -834,7 +844,7 @@ z
         transition: 0.15s ease;
     }
 
-    /* large grid */
+    /* LARGE GRID STYLING ------------------------------------- */
     .large-grid {
         width: 90%;
         height: 400px;
@@ -865,7 +875,7 @@ z
     }
 
 
-    /* medium grid------------------------------------------- */
+    /* MEDIUM GRID STYLING ---------------------------------------- */
     .medium-grid h2 {
         font-size: 22px;
     }
@@ -879,13 +889,18 @@ z
 
 
 
+    /* FOOTER RESPONSIVE STYLING ------------------------------------- */
+    .footer {
+        text-align: left;
+    }
     .footer-inner {
-        flex-direction: column; /* Stack items vertically on small screens */
-        text-align: center; /* Center-align all items */
+        flex-direction: column; 
+        text-align: left; 
     }
 
     .footer-logo {
-        margin-bottom: 20px;
+        font-size: 30px;
+        margin-top: 10px;
     }
 
     .footer-links ul,
@@ -893,4 +908,17 @@ z
         margin-top: 20px;
     }
 
+    .footer-social ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        font-size: 20px;
+    }
+
+    .footer-bottom {
+        margin-top: 0;
+        font-size: 14px; 
+    }
 }
