@@ -107,3 +107,216 @@ carousels.forEach((carousel, index) => {
         scrollLeft = carousel.scrollLeft;
     });
 });
+
+
+
+
+
+
+
+// JavaScript code for modal functionality
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the modal element
+    const modal = document.getElementById("productModal");
+
+    // Get the modal content elements
+    const modalImg = document.getElementById("modalImg");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalRatings = document.getElementById("modalRatings");
+    const modalDescription = document.getElementById("modalDescription");
+    const modalPrice = document.getElementById("modalPrice");
+
+    // Get all product elements
+    const products = document.querySelectorAll(".product");
+
+    // Loop through each product and add a click event listener
+    products.forEach((product) => {
+        product.addEventListener("click", function () {
+            // Get the product details
+            const imgSrc = product.querySelector("img").src;
+            const title = product.querySelector("h3").textContent;
+            const description = product.querySelector("p").textContent;
+            const price = product.querySelector(".price").textContent;
+
+            // Open the modal and populate with product details
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+            modalTitle.textContent = title;
+            modalDescription.textContent = description;
+            modalPrice.textContent = price;
+
+            // You can implement ratings logic here if needed
+
+            // Close the modal when the close button is clicked
+            const closeBtn = document.querySelector(".close");
+            closeBtn.addEventListener("click", function () {
+                modal.style.display = "none";
+            });
+
+            // Close the modal when clicking outside the modal content
+            window.addEventListener("click", function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        });
+    });
+});
+
+
+
+
+
+
+
+// // JavaScript code for modal functionality
+// document.addEventListener("DOMContentLoaded", function () {
+//     // Get the modal element
+//     const modal = document.getElementById("productModal");
+
+//     // Get the modal content elements
+//     const modalImg = document.getElementById("modalImg");
+//     const modalTitle = document.getElementById("modalTitle");
+//     const modalRatings = document.getElementById("modalRatings");
+//     const modalDescription = document.getElementById("modalDescription");
+//     const modalPrice = document.getElementById("modalPrice");
+//     const additionalImages = document.querySelector(".additional-images");
+
+//     // Get all product elements
+//     const products = document.querySelectorAll(".product");
+
+//     // Loop through each product and add a click event listener
+//     products.forEach((product) => {
+//         product.addEventListener("click", function () {
+//             // Get the product details
+//             const imgSrc = product.querySelector("img").src;
+//             const title = product.querySelector("h3").textContent;
+//             const description = product.querySelector("p").textContent;
+//             const price = product.querySelector(".price").textContent;
+
+//             // Clear any existing additional images
+//             additionalImages.innerHTML = "";
+
+//             // Open the modal and populate with product details
+//             modal.style.display = "block";
+//             modalImg.src = imgSrc;
+//             modalTitle.textContent = title;
+//             modalDescription.textContent = description;
+//             modalPrice.textContent = price;
+
+//             // You can implement ratings logic here if needed
+
+//             // Close the modal when the close button is clicked
+//             const closeBtn = document.querySelector(".close");
+//             closeBtn.addEventListener("click", function () {
+//                 modal.style.display = "none";
+//             });
+
+//             // Close the modal when clicking outside the modal content
+//             window.addEventListener("click", function (event) {
+//                 if (event.target === modal) {
+//                     modal.style.display = "none";
+//                 }
+//             });
+
+//             // Create and append additional product images
+//             for (let i = 1; i <= 3; i++) {
+//                 const additionalImg = document.createElement("img");
+//                 additionalImg.src = `additional-image-${i}.jpg`; // Replace with actual image URLs
+//                 additionalImg.alt = `Additional Image ${i}`;
+//                 additionalImg.classList.add("additional-image");
+
+//                 // Add click event listener to update the main image
+//                 additionalImg.addEventListener("click", function () {
+//                     modalImg.src = additionalImg.src;
+//                 });
+
+//                 additionalImages.appendChild(additionalImg);
+//             }
+//         });
+//     });
+// });
+
+
+
+
+
+
+
+
+// JavaScript code for modal functionality
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the modal element
+    const modal = document.getElementById("productModal");
+
+    // Get the modal content elements
+    const modalImg = document.getElementById("modalImg");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalRatings = document.getElementById("modalRatings"); // Ratings container
+    const modalDescription = document.getElementById("modalDescription");
+    const modalPrice = document.getElementById("modalPrice");
+    const additionalImages = document.querySelector(".additional-images");
+
+    // Get all product elements
+    const products = document.querySelectorAll(".product");
+
+    // Loop through each product and add a click event listener
+    products.forEach((product) => {
+        product.addEventListener("click", function () {
+            // Get the product details
+            const imgSrc = product.querySelector("img").src;
+            const title = product.querySelector("h3").textContent;
+            const description = product.querySelector("p").textContent;
+            const price = product.querySelector(".price").textContent;
+
+            // Clear any existing additional images and ratings
+            additionalImages.innerHTML = "";
+            modalRatings.innerHTML = "";
+
+            // Replace this with your actual rating logic
+            const ratingsCount = 4.5; // Replace with the actual rating count (e.g., 4.5 stars)
+
+            // Create and append the rating stars
+            for (let i = 0; i < ratingsCount; i++) {
+                const star = document.createElement("i");
+                star.classList.add("bi", "bi-star-fill", "star");
+                modalRatings.appendChild(star);
+            }
+
+            // Open the modal and populate with product details
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+            modalTitle.textContent = title;
+            modalDescription.textContent = description;
+            modalPrice.textContent = price;
+
+            // Close the modal when the close button is clicked
+            const closeBtn = document.querySelector(".close");
+            closeBtn.addEventListener("click", function () {
+                modal.style.display = "none";
+            });
+
+            // Close the modal when clicking outside the modal content
+            window.addEventListener("click", function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+
+            // Create and append additional product images
+            for (let i = 1; i <= 3; i++) {
+                const additionalImg = document.createElement("img");
+                additionalImg.src = `additional-image-${i}.jpg`; // Replace with actual image URLs
+                additionalImg.alt = `Additional Image ${i}`;
+                additionalImg.classList.add("additional-image");
+
+                // Add click event listener to update the main image
+                additionalImg.addEventListener("click", function () {
+                    modalImg.src = additionalImg.src;
+                });
+
+                additionalImages.appendChild(additionalImg);
+            }
+        });
+    });
+});
